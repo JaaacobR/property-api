@@ -5,7 +5,7 @@ import { PropertyRepository } from '../repositories';
 
 @Injectable()
 export class CreatePropertyService {
-  private readonly baseUrl = 'http://api.weatherstack.com/current';
+  private readonly baseUrl = process.env.BASE_URL;
   private readonly apiKey = process.env.WEATHERSTACK_KEY;
 
   constructor(private readonly propertyRepository: PropertyRepository) {}

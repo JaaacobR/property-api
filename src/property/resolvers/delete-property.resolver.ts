@@ -1,4 +1,4 @@
-import { Resolver, Query, Args, Mutation } from '@nestjs/graphql';
+import { Resolver, Args, Mutation } from '@nestjs/graphql';
 import { PropertyRepository } from '../repositories';
 import { Property } from '../dto/property.dto';
 import { GetPropertyByIdInput } from '../inputs';

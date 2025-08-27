@@ -1,5 +1,5 @@
 import { InputType, Field } from '@nestjs/graphql';
-import { IsNumber, IsString, IsUUID, Length } from 'class-validator';
+import { IsUUID } from 'class-validator';
 
 @InputType()
 export class GetPropertyByIdInput {

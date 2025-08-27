@@ -1,5 +1,5 @@
 import { InputType, Field } from '@nestjs/graphql';
-import { IsNumber, IsString, Length } from 'class-validator';
+import { IsString, Length } from 'class-validator';
 
 @InputType()
 export class CreatePropertyInput {

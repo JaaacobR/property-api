@@ -1,6 +1,6 @@
-import { Resolver, Query, Mutation, Args } from '@nestjs/graphql';
+import { Resolver, Query, Args } from '@nestjs/graphql';
 
-import { CreatePropertyInput, FindAllPropertiesInput } from '../inputs';
+import { FindAllPropertiesInput } from '../inputs';
 import { PropertyRepository } from '../repositories';
 import { Property } from '../dto/property.dto';
 
