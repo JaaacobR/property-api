@@ -17,6 +17,16 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## environment variables
+
+```
+DATABASE_URL
+
+WEATHERSTACK_KEY
+
+BASE_URL
+```
+
 ## Run tests
 
 ```bash
