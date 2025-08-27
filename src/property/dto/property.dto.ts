@@ -1,0 +1,32 @@
+import { ObjectType, Field } from '@nestjs/graphql';
+import { GraphQLJSON } from 'graphql-type-json';
+
+@ObjectType()
+export class Property {
+  @Field()
+  id: string;
+
+  @Field()
+  city: string;
+
+  @Field()
+  street: string;
+
+  @Field()
+  state: string;
+
+  @Field()
+  zipCode: string;
+
+  @Field(() => GraphQLJSON)
+  weatherData: unknown;
+
+  @Field({ nullable: true })
+  lat?: number;
+
+  @Field({ nullable: true })
+  long?: number;
+
+  @Field()
+  createdAt: Date;
+}
