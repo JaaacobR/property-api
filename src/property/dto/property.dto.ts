@@ -21,11 +21,11 @@ export class Property {
   @Field(() => GraphQLJSON)
   weatherData: unknown;
 
-  @Field({ nullable: true })
-  lat?: number;
+  @Field()
+  lat: number;
 
-  @Field({ nullable: true })
-  long?: number;
+  @Field()
+  long: number;
 
   @Field()
   createdAt: Date;

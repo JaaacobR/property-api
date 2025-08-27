@@ -14,7 +14,7 @@ model Property {
   state       String
   zipCode     String
   weatherData Json
-  lat         Float?
-  long        Float?
+  lat         Float
+  long        Float
   createdAt   DateTime @default(now())
 }
